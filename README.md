@@ -3,7 +3,7 @@ keras implementation of Image Super-Resolution Using Deep Convolutional Networks
 
 *GT* | *Bicubic* | *SRCNN* 
 :---: | :---: | :---: |
-<img src = 'results/original.png'> | <img src = 'mybicubic.jpg'> | <img src = 'results/mysrcnn-result-withMyBicubic.jpg'> 
+<img src = 'results/original.png'> | <img src = 'results/mybicubic.jpg'> | <img src = 'results/mysrcnn-result-withMyBicubic.jpg'> 
 
 
 ## Implementation Details
