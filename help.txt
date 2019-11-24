@@ -1,0 +1,8 @@
+
+
+first prepare train and test data:
+copy your data in data/your-method/your-data directory
+run prepare code
+this code create two h5 file for test and train
+
+2 : edit main.py top constanst then run code
