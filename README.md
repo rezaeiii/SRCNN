@@ -8,7 +8,7 @@ keras implementation of Image Super-Resolution Using Deep Convolutional Networks
 
 ## Implementation Details
 
-Our implementation used TensorFlow and keras to train SRCNN. We used almost same methods as described in the paper. We trained the network with 91-image dataset (without augmentation) and validated with Set5 dataset while training. At test time, to get the same result size for up-scaling factor 3. Also, we padded border of the ground truth and bicubic interpolated test image by 6 to make same size with SRCNN result. The main difference between own implementation  and orgianl page in using the SSIM error function instead mean square error.
+Our implementation used TensorFlow and keras to train SRCNN. We used almost same methods as described in the paper. We trained the network with 91-image dataset (without augmentation) and validated with Set5 dataset while training. At test time, to get the same result size for up-scaling factor 3. Also, we padded border of the ground truth and bicubic interpolated test image by 6 to make same size with SRCNN result. The main difference between own implementation and original paper in using the SSIM error function instead mean square error.
 
 According to the paper, the best performance on Set5 with upscaling factor 3 is the average PSNR value of 32.75dB with filter size 9-5-5 and ImageNet training dataset, but we were **aim to 32.39dB** which is the demonstrated average PSNR value when the model is trained with 91-image dataset, 9-1-5 filter size and Y only. After training 5000 epoch, we got the above result for single image , **25.77dB/0.918**.
 
