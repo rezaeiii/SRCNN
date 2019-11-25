@@ -44,7 +44,7 @@ python main.py
 you can change the options parameters in main.py
 ```bash
 EPOCHS  		#network epochs  	
-SCALE_FACTOR	#scale factor for training network
+SCALE_FACTOR		#scale factor for training network
 LOSS			#loss function ==> 'mse' or dssimloss
 DATA_TRAIN		#prepared train h5 file
 DATA_TEST		#prepared test h5 file
@@ -52,6 +52,7 @@ MODEL_NAME		#model name to use for load pretrained model or training model save
 BATCH_SIZE		
 TRAIN			#if false you can use pretrained model and dont train model
 ```
+
 ### Testing SRCNN
 Also use `main.py` to test the network. Pretrained-model with 91-image training dataset and up-scaling factor 3 is given. Example usage:
 ```bash
